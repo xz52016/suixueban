@@ -6,10 +6,11 @@ node_modules/
 .env
 *.log
 
-# 大文件 / 敏感文档不进 git
+# 大文件 / 敏感文档 / 构建产物不进 git
 数学教材/*.pdf
 PPT对比/
 PRD-v0.3-草案.md
 题库/*.pdf
 题库/*.docx
 题库/*.html
+
