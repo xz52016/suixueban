@@ -1,0 +1,53 @@
+/* ====== 穗学伴 · 响应式布局 ====== */
+
+/* 基础：内容区 */
+.page {
+  display: none;
+  padding: var(--space-lg);
+  animation: fadeIn var(--transition-slow);
+}
+.page.active { display: block; }
+
+/* ====== 断点：手机竖屏 ====== */
+@media (max-width: 599px) {
+  .page { padding: var(--space-md); }
+  .app { max-width: 100%; }
+}
+
+/* ====== 断点：小平板 / 手机横屏 ====== */
+@media (min-width: 600px) and (max-width: 767px) {
+  .page { padding: var(--space-lg); }
+}
+
+/* ====== 断点：iPad 竖屏 ====== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page { padding: var(--space-xl); }
+  .app { max-width: 780px; }
+}
+
+/* ====== 断点：iPad 横屏 / 桌面 ====== */
+@media (min-width: 1024px) {
+  .page { padding: var(--space-xl); }
+  .app { max-width: 900px; }
+}
+
+/* ====== 工具类 ====== */
+.text-center { text-align: center; }
+.text-secondary { color: var(--text-secondary); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mb-md { margin-bottom: var(--space-md); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-center { align-items: center; justify-content: center; }
+.flex-between { justify-content: space-between; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-md); }
+
+@media (max-width: 599px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}

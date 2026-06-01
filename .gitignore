@@ -1,0 +1,7 @@
+# 穗学伴 · Git 忽略规则
+.DS_Store
+*.pyc
+__pycache__/
+node_modules/
+.env
+*.log

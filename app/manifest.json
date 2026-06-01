@@ -1,0 +1,25 @@
+{
+  "name": "穗学伴 - 自适应教学辅导 App",
+  "version": "0.0.1",
+  "status": "规划中",
+  "description": "自适应手机和iPad的Web教学前端，代替家长提供AI辅助教学辅导",
+  "design_docs": {
+    "app_plan": "App规划-V1.0.md",
+    "dev_plan": "开发计划-14天.md",
+    "prd": "../PRD-v0.3-草案.md"
+  },
+  "data_sources": {
+    "grade3_down": "../题库/三年级下册_题库.json",
+    "grade4_up": "../题库/上册_题库.json",
+    "grade4_down": "../题库/下册_题库.json"
+  },
+  "tech_stack": [
+    "Pure HTML + CSS + JS",
+    "CSS Media Queries (responsive)",
+    "Canvas (charts)",
+    "localStorage (persistence)",
+    "Hash-based Router"
+  ],
+  "mvp_duration": "14 days",
+  "latest_update": "2026-05-10"
+}
